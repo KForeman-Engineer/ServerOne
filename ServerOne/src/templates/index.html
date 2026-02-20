@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 1: Golf Score App</title>
+</head>
+<body>
+
+    <form>
+        <p>
+            <label id="lblGolfCourse">N/A</label>
+            <br><br>
+            <label>What course are you playing on:</label>
+            <select id="cboHoles">
+                <option value="9">Course 1</option>
+                <option value="18">Course 2</option>
+                <option value="18">Course 3</option>
+                <option value="9">Course 4</option>
+                
+            </select>
+            <br>
+        </p>
+
+        <p>
+            <label>Your Current Round Totals<br>&nbsp&nbsp Current Hole:</label> 
+            <input type="text" id="txtCurrenthole" size="2" readonly>
+            <label>&nbsp&nbsp Total Strokes:</label> 
+            <input type="text" id="txtCurrentstroketotal" size="2" value = "0" readonly>
+            <label>&nbsp&nbsp Total Score:</label> 
+            <input type="text" id="txtCurrentscore" size="2" value = "0" readonly>
+            <label>&nbsp&nbsp Holes Remaining:</label> 
+            <input type="text" id="txtRemainingholes" size="2" readonly>
+        </p>
+
+        <p>
+            <label>Enter for current hole:</label>
+            <label><br>&nbsp&nbsp # of Strokes:</label>
+            <input type="number" id="nbrStrokes">
+            <label>&nbsp&nbsp Par:</label>
+            <input type="radio" name="radPar" id="radParThree" value="3" checked="checked">Three
+            <input type="radio" name="radPar" id="radParFour"  value="4">Four
+            <input type="radio" name="radPar" id="radParFive"  value="5">Five
+        </p>
+
+        <input type="button" id="btnNew" value="New/Reset Round">
+        <input type="button" id="btnSubmit" value="Next Hole">
+    </form>
+
+    <script src="http://127.0.0.1:8080/Scripts/KaydenForeman_CalcTotals.js"></script>
+    
+</body>
+</html>

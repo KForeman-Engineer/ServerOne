@@ -1,0 +1,5 @@
+
+[INFO] -- > Sucessfully Started Server!
+[INFO] --> Sucessfully Created a Route to index.html
+[INFO] -- > Sucessfully Started Server!
+[INFO] --> Sucessfully Created a Route to index.html
